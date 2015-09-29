@@ -1,0 +1,18 @@
+{
+  "name": "azia",
+  "version": "1.0.0",
+  "description": "smoll_azia",
+  "main": "index.js",
+  "dependencies": {
+    "gulp": "^3.9.0"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "wiredep": "^2.2.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "kdes70",
+  "license": "ISC"
+}

@@ -1,0 +1,84 @@
+/* = —брос отступов дл€ всех элементов */
+* { margin: 0; padding: 0 }
+
+/* = ”бираем маркировку списков */
+ul, ol { list-style: none }
+
+/* = –аботаем с таблицами: убираем удвоение рамок €чеек и рассто€ние между €чейками */
+table { border-collapse: collapse; border-spacing: 0 }
+
+/* = —сылки */
+a { text-decoration: none; color: #ffffff }
+
+/* = ”бираем рамку дл€ изображений */
+img { border: none }
+
+/* = ”бираем обводку при клике на элементы форм и др. */
+:focus { outline: 0 }
+
+/* = —брасываем выравнивание после плавающих элементов */
+.clear { clear: both; height: 1px; margin-top: -1px }
+
+html {
+    min-height: 100%;
+    background-image: url("../images/bg.jpeg");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+}
+body {
+    min-height:100%;
+}
+#header{
+    height: 50px;
+    width: 100%;
+    background: #27120f;
+    opacity: 0.9;
+}
+#logo{
+    width: 300px;
+    float: left;
+}
+nav#menu{
+    height: 50px;
+    float: right;
+}
+nav#menu ul li{
+    float: left;
+    padding: 5px;
+}
+
+.wrepper{
+    width: 980px;
+    margin: 0 auto;
+    outline: 1px solid #66ff66;
+}
+
+#page{
+    min-height: 510px;
+
+}
+
+#slider{
+    width: 100%;
+    height: 510px;
+    position: relative;
+}
+#slider_desc{
+    position: absolute;
+    bottom: 50px;
+    right: 0px;
+    background-color: #cccccc;
+    padding: 10px;
+}
+
+#footer{
+    height: 200px;
+    width: 100%;
+    background: #27120f;
+    opacity: 0.6;
+}
+
