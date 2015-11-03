@@ -4,7 +4,7 @@
   "dependencies": {
     "jquery": "1.9",
     "normalize-css": "normalize.css#~3.0.3"
-  },
+   },
   "authors": [
     "Dmitry <kdes70@mail.ru>"
   ],
