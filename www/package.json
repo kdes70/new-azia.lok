@@ -4,10 +4,14 @@
   "description": "smoll_azia",
   "main": "index.js",
   "dependencies": {
-    "gulp": "^3.9.0"
+    "gulp-notify": "^2.2.0",
+    "gulp-rename": "^1.2.2"
   },
   "devDependencies": {
     "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-concat-css": "^2.2.0",
+    "gulp-minify-css": "^1.2.1",
     "wiredep": "^2.2.2"
   },
   "scripts": {

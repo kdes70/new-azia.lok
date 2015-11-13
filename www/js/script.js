@@ -1,21 +1,10 @@
 /**
  * Created by ִלטענטי on 28.09.2015.
  */
-$(function(){
-    $("#slides").slidesjs({
-        width: 980,
-        height: 510,
-        effect: {
-            slide: {speed: 500},
-        },
-
-        play: {
-            active: false,
-            auto: true,
-            interval: 4000,
-            swap: true
-        },
-        navigation: false,
-        // pagination: {active: true},
-    });
-});
+//$("#fakeloader").fakeLoader({
+//    // timeToHide:1200, //Time in milliseconds for fakeLoader disappear
+//    zIndex:"999",//Default zIndex
+//    spinner:"spinner1",//Options: 'spinner1', 'spinner2', 'spinner3', 'spinner4', 'spinner5', 'spinner6', 'spinner7'
+//    bgColor:"#ffffff", //Hex, RGB or RGBA colors
+//    // imagePath:"yourPath/customizedImage.gif" //If you want can you insert your custom image
+//});

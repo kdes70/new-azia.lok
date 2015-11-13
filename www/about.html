@@ -19,7 +19,6 @@
 
     <!-- bower:css -->
     <link rel="stylesheet" href="vender/normalize-css/normalize.css" />
-    <link rel="stylesheet" href="vender/fakeLoader/fakeLoader.css" />
     <!-- endbower -->
     <link type="text/css" rel="stylesheet" href="css/style.css" media="all" />
 
@@ -27,7 +26,6 @@
 
 </head>
 <body>
-<div id="fakeLoader"></div>
 <div id="body_top">
     <div id="header">
         <div class="wrepper" >
@@ -71,40 +69,23 @@
         <!--<div id="slider_desc"><h3>Описание блюда</h3></div>-->
     <!--</div>-->
     <div id="page" class="wrepper">
-
-            <div class="slider_container">
-                <div class="flexslider">
-                    <ul class="slides">
-                        <li>
-                            <a href="http://lorempixel.com/980/700/food/1"><img src="http://lorempixel.com/980/700/food/1" alt="" title=""/></a>
-                            <div class="annos">
-                                <h1>Здесь можно размещать новости</h1>
-                                <h3>Предложения и акции</h3>
-                            </div>
-                            <div class="flex-caption">
-                                <div class="caption_title_line">
-                                    <h2>Party Hairstyles</h2>
-                                    <p>Find the perfect hairstyle a la Lauren Conrad for every type of festive fête.</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <a href="http://lorempixel.com/980/700/food/2"><img src="http://lorempixel.com/980/700/food/2" alt="" title=""/></a>
-                            <div class="annos">
-                                <h1>Новые блюда</h1>
-                                <h3>С собой и на вынос</h3>
-                            </div>
-                            <div class="flex-caption">
-                                <div class="caption_title_line">
-                                    <h2>Beautiful Hairstyle</h2>
-                                    <p>The latest hairstyles and instructions on how to create them here. Total Beauty has your complete hairstyles guide</p>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
+        <aside id="lift_block">
+            <div id="left_head">
+                О нас
             </div>
+            <ul>
+                <li><a href="" class="active">О нас</a></li>
+                <li><a href="">Концепция</a></li>
+                <li><a href="">
+                    <img src="./images/160x600.jpg" alt="акция">
+                </a></li>
+            </ul>
 
+        </aside>
+        <section id="content">
+            <h1>РЕНЕССАНС КИТАЙСКОЙ КУХНИ В МОСКВЕ</h1>
+                <p>Китайскую кухню можно сравнить с бессмертной птицей Феникс, возрождающейся, обновляющейся и предстающей каждый раз в еще более ослепительном оперении. В наши дни, в условиях стремительного развития Китая, кулинарное искусство Поднебесной переживает очередной ренессанс. Бережно относясь к национальным традициям, знаменитые местные повара создают новые блюда с учетом самых актуальных мировых тенденций. Этот необычный микс Востока и Запада сейчас настолько популярен в некоторых премиальных ресторанах Пекина и Шанхая, что, практически, определяет лицо современной китайской кухни. Теперь такие кулинарные шедевры можно попробовать и в самом центре Москвы. Их готовят в ресторане названном в честь великой династии Тан, чье правление было ознаменовано расцветом, преуспеванием и открытием всему новому.</p>
+        </section>
         <div class="clear"></div>
     </div>
     <div id="footer">
@@ -128,21 +109,14 @@
 
 <!-- bower:js -->
 <script src="vender/jquery/dist/jquery.js"></script>
-<script src="vender/fakeLoader/fakeLoader.js"></script>
 <!-- endbower -->
-<script type="text/javascript">
-     $("#fakeloader").fakeLoader();
-
-</script>
-<script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
-<script type="text/javascript" src="js/script.js"></script>
-
+<script src="js/jquery.flexslider-min.js"></script>
 <script type="text/javascript" charset="utf-8">
     var $ = jQuery.noConflict();
     $(window).load(function() {
         $('.flexslider').flexslider({
                     animation: "fade",
-                    animationLoop: false,
+//                    animationLoop: true,
         });
     $(function() {
         $('.show_menu').click(function(){
@@ -159,6 +133,7 @@
     });
 </script>
 
+<script type="text/javascript" src="js/script.js"></script>
 </body>
 
 </html>

@@ -2,9 +2,13 @@
   "name": "azia",
   "version": "0.1.0",
   "dependencies": {
-    "jquery": "1.9",
-    "normalize-css": "normalize.css#~3.0.3"
-   },
+    "jquery": "1.11.*",
+    "normalize-css": "normalize.css#~3.0.3",
+    "fakeLoader": "fakeloader#*"
+  },
+  "resolutions": {
+    "jquery": "1.11.*"
+  },
   "authors": [
     "Dmitry <kdes70@mail.ru>"
   ],

@@ -7,5 +7,6 @@
 ### Example user template
 
 bower_components
+vender
 node_modules
 # IntelliJ project files
