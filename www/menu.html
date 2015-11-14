@@ -33,6 +33,9 @@
                 <a class="head_booton" href="actions.html">Новогоднии банкеты</a>
                 <a class="head_booton reserve" href="actions.html">Бронирование столиков</a>
             </div>
+            <div id="shop_card">
+                Пусто
+            </div>
             <div id="logo">
                 <a href="/"><img src="images/logo_fff.png" alt="Маленькая Азия"></a>
             </div>
@@ -47,9 +50,9 @@
             </div>
             <nav id="menu">
                 <ul>
-                    <li><a href="about.html" class="active"><span class="font_family">О</span> нас</a></li>
-                    <li><a href="menu.html"><span class="font_family">М</span>еню</a></li>
-                    <li><a href=""><span class="font_family">Б</span>анкеты</a></li>
+                    <li><a href="about.html"><span class="font_family">О</span> нас</a></li>
+                    <li><a href="menu.html" class="active"><span class="font_family">М</span>еню</a></li>
+                    <li><a href="banket.html"><span class="font_family">Б</span>анкеты</a></li>
                     <li><a href=""><span class="font_family">Н</span>овости</a></li>
                     <li><a href=""><span class="font_family">Г</span>алерея</a></li>
                     <li><a href=""><span class="font_family">К</span>онтакты</a></li>
@@ -87,6 +90,89 @@
         </aside>
         <section id="content">
             <h1>ОСНОВНОЕ МЕНЮ</h1>
+            <!-- для бизнес ланча -->
+            <div id="page_menu">
+                <h2>Бизнес ланч</h2>
+                <h3>понедельник-пятница: 12.00-16.00</h3>
+                <img src="images/logo-menu.png" alt="Маленькая Азия">
+                <ul id="dish_list">
+                    <li>
+                        <div class="dish_lanch">
+                                <h4 class="lanch_title">Бизнес-ланч № 1</h4>
+                            <span class="lanch_date">12.11-13.11</span>
+                            <div class="fitness" title="ккал">
+                                593
+                            </div>
+                            <p>суп куриный с клецками</p>
+                            <p>салат "Мимоза"</p>
+                            <p>бигус с телятиной</p>
+                            <p>чай</p>
+                            <div class="lanch_prise">190р.</div>
+                            <a href="#" class="dish_add_bt" onclick="AddItem(1715, 1, 5, 0, 246.00); return false">
+                                <input name="1715" id="cart0-1715-5" value="ДОБАВИТЬ" class="itemadd2" type="submit">
+                            </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- для бизнес ланча END -->
+            <div id="page_menu">
+                <h2>Закуски</h2>
+                <ul id="dish_list">
+                    <li>
+                        <div class="dish_item">
+                            <p><b>Пряная селедочка с горчичной заправкой</b>
+                                <span class="dish_wight">200/30/5гр</span>
+                                <span class="dish_price">780р</span>
+                            </p>
+                            <small>свежие овощи с оливковой заправкой</small>
+                            <span class="dish_kall" title="ккал">ккал: 136</span>
+                        </div>
+                        <a href="#" class="dish_add_bt right" onclick="AddItem(1715, 1, 5, 0, 246.00); return false">
+                            <input name="1715" id="cart0-1715-5" value="ДОБАВИТЬ" class="itemadd2" type="submit">
+                        </a>
+                    </li>
+                    <li>
+                        <div class="added_dish"></div>
+                        <div class="dish_item">
+                            <p><b>Пряная селедочка с горчичной заправкой</b>
+                                <span class="dish_wight">200/30/5гр</span>
+                                <span class="dish_price">780р</span>
+                            </p>
+                            <small>свежие овощи с оливковой заправкой</small>
+                            <span class="dish_kall">ккал: 136</span>
+                        </div>
+                        <a href="#" class="dish_add_bt right" onclick="AddItem(1715, 1, 5, 0, 246.00); return false">
+                            <input name="1715" id="cart0-1715-5" value="ДОБАВИТЬ" class="itemadd2" type="submit">
+                        </a>
+                    </li>
+                    <li>
+                        <div class="dish_item">
+                            <p><b>Пряная селедочка с горчичной заправкой</b>
+                                <span class="dish_wight">200/30/5гр</span>
+                                <span class="dish_price">780р</span>
+                            </p>
+                            <small>свежие овощи с оливковой заправкой</small>
+                            <span class="dish_kall">ккал: 136</span>
+                        </div>
+                        <a href="#" class="dish_add_bt right" onclick="AddItem(1715, 1, 5, 0, 246.00); return false">
+                            <input name="1715" id="cart0-1715-5" value="ДОБАВИТЬ" class="itemadd2" type="submit">
+                        </a>
+                    </li> <li>
+                    <div class="dish_item">
+                        <p><b>Пряная селедочка с горчичной заправкой</b>
+                            <span class="dish_wight">200/30/5гр</span>
+                            <span class="dish_price">780р</span>
+                        </p>
+                        <small>свежие овощи с оливковой заправкой</small>
+                        <span class="dish_kall">ккал: 136</span>
+                    </div>
+                    <a href="#" class="dish_add_bt right" onclick="AddItem(1715, 1, 5, 0, 246.00); return false">
+                        <input name="1715" id="cart0-1715-5" value="ДОБАВИТЬ" class="itemadd2" type="submit">
+                    </a>
+                </li>
+                </ul>
+
+            </div>
         </section>
         <div class="clear"></div>
     </div>

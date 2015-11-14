@@ -28,6 +28,17 @@ ol {
     list-style: none;
 }
 
+h1, h2{
+    font-weight: 300;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 0px;
+}
+h1{
+    font-size: 24px;
+}
+
+
 /* = –аботаем с таблицами: убираем удвоение рамок €чеек и рассто€ние между €чейками */
 
 table {
@@ -46,6 +57,7 @@ a {
 
 img {
     border: none;
+    max-width: 100%;
 }
 
 /* = ”бираем обводку при клике на элементы форм и др. */
@@ -61,10 +73,17 @@ img {
     height: 1px;
     margin-top: -1px;
 }
+hr.bold {
+    border-bottom: 4px black solid;
+}
 html {
-    background: url("../images/bg.jpeg") no-repeat right bottom/cover;
+    background: url("../images/bg.jpeg");
     min-height: 100%;
     -webkit-background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    background-attachment: fixed;
     -moz-background-size: cover;
     -o-background-size: cover;
 }
@@ -83,6 +102,12 @@ body {
     font-size: 16px !important;
 }
 
+#page_menu h2,.lanch_title,.lanch_prise
+{
+    font-family: 'a_stamperbold';
+}
+
+
 .active{
     color: gold !important;
 }
@@ -96,6 +121,7 @@ body {
     padding-top: 170px;
 }
 
+/* HEADER */
 #header {
     width: 100%;
     height: 150px;
@@ -115,7 +141,20 @@ body {
     top: 15px;
     left: 325px;
 }
-
+#shop_card{
+    background-image: url("../images/icon/basket_shop.png");
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 36px;
+    position: absolute;
+    top: 26px;
+    right: 148px;
+    width: 94px;
+    line-height: 53px;
+    height: 38px;
+    text-align: right;
+    font-size: 18px;
+}
 #logo img {
     width: 320px;
 }
@@ -263,6 +302,157 @@ nav#menu ul li {
     box-sizing: border-box;
 }
 
+#content > h3{
+    font-size: 12px;
+    text-align: center;
+    color: #545454;
+    text-transform: uppercase;
+}
+/* PAGE MENU */
+#page_menu{
+    width: 100%;
+    min-height: 300px;
+    background: #ffffff;
+    padding-bottom: 80px;
+    position: relative;
+}
+#page_menu img{
+    position: absolute;
+    width: 250px;
+    top: 100px;
+    left: 238px;
+}
+#page_menu h2{
+    font-size: 24px;
+    padding-top: 30px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #2b2b2b;
+}
+#page_menu h3{
+    text-align: center;
+    margin-top: 11px;
+    color: gold;
+    font-weight: 400;
+}
+#dish_list{
+    margin: 10px 50px 10px 60px;
+    color: #2b2b2b;
+    position: relative;
+}
+#dish_list li{
+    margin-top: 45px;
+}
+.dish_item > p{
+    border-bottom: 2px dotted #2b2b2b;
+}
+#dish_list p b{
+    font-size: 20px;
+}
+span.dish_wight{
+    font-size: 12px;
+}
+span.dish_price{
+    float: right;
+    color: gold;
+    font-weight: bold;
+    font-size: 20px;
+}
+#dish_item > small {
+    font-weight: 600;
+    font-size: 14px;
+    color: #696969;
+}
+.dish_kall{
+    float: right;
+    color: #3AB54A;
+    font-weight: 600;
+}
+.right{
+ float: right;
+}
+.dish_add_bt{
+
+    height: 26px;
+    width: 95px;
+    border: 1px solid #cccccc;
+    background-image: url("../images/icon/basket.png");
+    display: block;
+    padding-left: 24px;
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position: 2px center;
+}
+.dish_add_bt input{
+    border: 1px solid;
+    padding: 3px;
+    background: #b2b2b2;
+}
+.added_dish{
+    position: absolute;
+    background-image: url("../images/icon/checkmark.png");
+    background-position: left center;
+    background-size: 32px;
+    background-repeat: no-repeat;
+    left: -41px;
+    width: 32px;
+    height: 32px;
+}
+
+
+.dish_lanch{
+    width: 90%;
+    margin: 80px auto;
+    min-height: 300px;
+    border: 3px dashed;
+}
+.lanch_title{
+    font-size: 18px;
+    text-align: center;
+    margin: 20px;
+    letter-spacing: 2px;
+}
+.dish_lanch p{
+    text-align: center;
+    font-size: 18px;
+    margin-top: 12px;
+    text-transform: uppercase;
+}
+.lanch_date{
+    position: absolute;
+    top: 10px;
+    left: 40px;
+    font-size: 12px;
+    color: #b2b2b2;
+}
+.fitness{
+    background-image: url("../images/icon/fitnes.png");
+    background-repeat: no-repeat;
+    background-size: 24px;
+    background-position: left center;
+    width: 60px;
+    text-align: right;
+    height: 25px;
+    color: #00B842;
+    font-size: 18px;
+    line-height: 27px;
+    position: absolute;
+    top: 20px;
+    right: 50px;
+}
+.lanch_prise{
+    color: white;
+    text-align: center;
+    width: 70px;
+    margin: 10px auto;
+    font-size: 20px;
+    padding: 5px;
+    border: 1px solid gold;
+    background: gold;
+}
+.dish_lanch a.dish_add_bt{
+    margin: 10px auto;
+}
 /* SLIDER */
 
 .annos{
@@ -362,7 +552,123 @@ html[xmlns] .slides {display: block;}
 .flex-control-nav li a.active {background-position: 0 -26px; cursor: default;}
 
 
-/* FOOTER */
+
+
+
+/* BANKET */
+.banket_icon{
+    width: 100%;
+    text-align: center;
+}
+.banket_icon li{
+    display: inline-block;
+    padding: 0 10px 0 10px;
+    font-size: 14px;
+    margin: 10px;
+    position: relative;
+    font-weight: 400;
+}
+.banket_icon li span{
+    background-image: url("../images/icon/banket_icoons%20(1).png");
+    background-repeat: no-repeat;
+    display: inline-block;
+    position: relative;
+    margin-right: 5px;
+    top: 11px;
+    height: 34px;
+}
+span.puople{
+    width: 40px;
+}
+span.banket_price{
+    background-position: -40px center;
+    width: 27px;
+}
+span.banket_table{
+    background-position: -87px center;
+    width: 27px;
+}
+span.banket_interer{
+    background-position: -114px center;
+    width: 34px;
+}
+span.banket_sale{
+    background-position: -146px center;
+    width: 34px;
+}
+span.banket_surprise{
+    background-position: -176px center;
+    width: 27px;
+}
+.btn{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    padding: 10px 20px 10px 20px;
+    display: inline-block;
+}
+.btn_banket{
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+.banket_item {
+    margin-top: 20px;
+}
+/* SLIDER BANKET */
+.banket_page >.slider_container{
+    width: 720px;
+    margin: inherit;
+}
+
+ div.banket_page ul.flex-direction-nav > li > a.next{
+    bottom: 72px;
+    right: 0px;
+}
+ div.banket_page ul.flex-direction-nav > li > a.prev{
+    bottom: 29px;
+    right: 0px;
+}
+
+div.banket_page ol.flex-control-nav {
+    width: 100%;
+    position: absolute;
+    bottom: -5px;
+    text-align: center;
+}
+div.banket_page ol.flex-control-nav li a{
+    background-image: url("../images/slider/gallery-dot.png");
+    background-repeat: no-repeat;
+    background-position: -13px;
+}
+
+div.banket_page ol.flex-control-nav li a.active{
+    background-position: 0px;
+}
+
+
+
+/* SVADBA */
+.head_block_bl{
+    border-top: 1px black solid;
+    border-bottom: 1px black solid;
+    text-align: center;
+    padding: 10px;
+}
+#content .head_block_bl{
+    background-color: black;
+    color: white;
+    margin-bottom: 20px;
+}
+#content p{
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+#content a{
+    text-decoration: underline;
+    color: #080808;
+}
+    /* FOOTER */
 #footer{
     width: 100%;
     height: 75px;
